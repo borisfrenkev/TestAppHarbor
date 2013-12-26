@@ -1,0 +1,10 @@
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Models\bin\Debug\SimpleForumMVC.Models.dll
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Models\bin\Debug\SimpleForumMVC.Models.pdb
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Models\obj\Debug\SimpleForumMVC.Models.csprojResolveAssemblyReference.cache
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Models\obj\Debug\SimpleForumMVC.Models.dll
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Models\obj\Debug\SimpleForumMVC.Models.pdb
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Models\bin\Debug\SimpleForumMVC.Models.dll.config
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml

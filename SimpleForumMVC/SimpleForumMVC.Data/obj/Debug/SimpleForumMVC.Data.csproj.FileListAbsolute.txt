@@ -1,0 +1,16 @@
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Data\bin\Debug\SimpleForumMVC.Data.dll.config
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Data\bin\Debug\SimpleForumMVC.Data.dll
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Data\bin\Debug\SimpleForumMVC.Data.pdb
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Data\bin\Debug\EntityFramework.dll
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Data\bin\Debug\EntityFramework.xml
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Data\obj\Debug\SimpleForumMVC.Data.csprojResolveAssemblyReference.cache
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Data\obj\Debug\SimpleForumMVC.Data.dll
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Data\obj\Debug\SimpleForumMVC.Data.pdb
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Data\bin\Debug\SimpleForumMVC.Models.dll
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Data\bin\Debug\SimpleForumMVC.Models.pdb
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\ForumMVC\SimpleForumMVC\SimpleForumMVC.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml

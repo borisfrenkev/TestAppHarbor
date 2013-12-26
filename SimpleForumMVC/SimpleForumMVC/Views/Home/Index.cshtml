@@ -1,0 +1,37 @@
+﻿@using SimpleForumMVC.Models.HelperMethods
+@model IEnumerable<SimpleForumMVC.Models.Question>
+
+@{
+    ViewBag.Title = "Forum";
+}
+
+<p>
+    @if (User.Identity.IsAuthenticated)
+    {
+        @Html.ActionLink("Ask Question", "Create")
+    }
+
+</p>
+
+<p>Recent questions and answers </p>
+@foreach (var item in Model)
+{
+    <div>
+        @item.Answers.Count
+        answers
+    </div>
+    <h3>
+        @Html.ActionLink(item.Title, "Details", "Question", new { id = item.Id }, null)
+    </h3>
+    string time = TimeHelpers.GetTimeDiff(item.LastAnswerDate);
+    <span> @Html.ActionLink("answerd", "Details", "Question", new { id = item.Id }, null)</span>
+    <span> @time </span>
+    <span> @Html.ActionLink(item.Category.Name, "Category")</span>
+    <span>by</span>
+
+    string str = item.LastApplicationUser != null ? item.LastApplicationUser.UserName : "No user";
+    <span>@str</span>
+}
+<div>
+    @Html.ActionLink("Get full List of Quesions", "Index", "Question")
+</div>

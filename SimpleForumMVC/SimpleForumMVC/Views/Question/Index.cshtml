@@ -1,0 +1,35 @@
+﻿@using SimpleForumMVC.Models.HelperMethods
+@using SimpleForumMVC.HtmlHelpes
+@using SimpleForumMVC.Models
+@model IEnumerable<SimpleForumMVC.Models.Question>
+
+@{
+    ViewBag.Title = "Forum";
+}
+
+<p>
+    @if (User.Identity.IsAuthenticated)
+    {
+        @Html.ActionLink("Ask Question", "Create")
+    }
+
+</p>
+
+@foreach (var item in Model)
+{
+    <h3>
+        @Html.ActionLink(item.Title, "Details", "Question", new { id = item.Id},null)
+    </h3>
+    string time = TimeHelpers.GetTimeDiff(item.LastAnswerDate);
+    <span> @Html.ActionLink("answerd", "Details", "Question", new { id = item.Id },null)</span>
+    <span> @time </span>
+    <span> @Html.ActionLink(item.Category.Name, "Category")</span>
+    <span>by</span>
+
+    string str = item.LastApplicationUser != null ? item.LastApplicationUser.UserName : "No user";
+    <span>@str</span>
+    <div>
+        @Html.PageLinks((SimpleForumMVC.Models.PagingInfo)ViewBag.PageInfo, x => Url.Action("Index", new { page = x }))
+    </div>
+   
+}

@@ -1,0 +1,47 @@
+﻿@model SimpleForumMVC.Models.Question
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>
+   @Model.Title;
+</h2>
+<p>
+    @Model.Content
+</p>
+
+<h3>
+    Answers @Model.Answers.Count
+</h3>
+@*<span>@Html.ActionLink("answer", "Answer", "Answer", new { id = Model.Id }, null)</span>*@
+<div id="answer">
+
+
+    @foreach (var answer in Model.Answers)
+    {
+        <p>
+            @answer.Content
+        </p>
+
+        <span> @Html.ActionLink("answered", "Details", "Question", new { id = Model.Id }, null)</span>
+        <span>@string.Format("{0} {1}, {2}", answer.CreationDate.Month, answer.CreationDate.Day, answer.CreationDate.Year) </span>
+        string str = answer.ApplicationUser.UserName;
+        <span>by</span>
+        <span>@str</span>
+
+        foreach (var comment in answer.Comments)
+        {
+            <p>
+                @comment.Content
+            </p>
+            <span> @Html.ActionLink("answerd", "Details", "Question", new { id = Model.Id }, null)</span>
+            <span>@string.Format("{0} {1}, {2}", comment.CreationDate.Month, comment.CreationDate.Day, comment.CreationDate.Year) </span>
+            string user = comment.ApplicationUser.UserName;
+            <span>by</span>
+            <span>@comment.ApplicationUser.UserName;</span>
+            <span>@Html.ActionLink("comment", "Comment", "Comment", new { id = answer.Id }, null)</span>
+        }
+
+    }
+</div>
